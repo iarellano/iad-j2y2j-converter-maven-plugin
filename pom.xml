@@ -4,7 +4,7 @@
 
     <groupId>com.github.iarellano</groupId>
     <artifactId>iad-j2y2j-converter-maven-plugin</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>Json to Yaml to Json Converter Maven Plugin</name>
@@ -50,7 +50,7 @@
         <connection>scm:git:git@github.com:iarellano/iad-j2y2j-converter-maven-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:iarellano/iad-j2y2j-converter-maven-plugin.git</developerConnection>
         <url>https://github.com/iarellano/iad-j2y2j-converter-maven-plugin</url>
-        <tag>iad-j2y2j-converter-maven-plugin-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
 
