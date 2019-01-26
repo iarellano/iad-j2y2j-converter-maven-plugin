@@ -1,0 +1,12 @@
+{
+  "yaml": {
+    "globProperty1": "value1",
+    "globProperty2": {
+      "jsonProperty": [
+        1,
+        4,
+        5
+      ]
+    }
+  }
+}

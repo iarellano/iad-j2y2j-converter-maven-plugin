@@ -1,0 +1,25 @@
+{
+  "yaml": {
+    "property1": "value1",
+    "property2": "value2"
+  },
+  "json": "este también furula",
+  "version": "${versioning}",
+  "array": [
+    {
+      "name": "Some Name"
+    },
+    1,
+    4,
+    "Texto",
+    {
+      "innerArray": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

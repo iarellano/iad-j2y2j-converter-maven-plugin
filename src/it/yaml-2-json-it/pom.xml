@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.iarellano.it</groupId>
+    <artifactId>yaml-2-json-it</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <description>A simple IT verifying the basic use case.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>@project.groupId@</groupId>
+                <artifactId>@project.artifactId@</artifactId>
+                <version>@project.version@</version>
+                <executions>
+                    <execution>
+                        <id>yaml-2-json</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>yaml-2-json</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}/src/main</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>resources/*.yaml</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                            <indentSpacess>4</indentSpacess>
+                            <prettyPrintJson>false</prettyPrintJson>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
