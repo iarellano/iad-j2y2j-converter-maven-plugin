@@ -1,5 +1,8 @@
 # iad-j2y2j-converter-maven-plugin
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.iarellano/iad-j2y2j-converter-maven-plugin.svg)](https://mvnrepository.com/artifact/com.github.iarellano/iad-j2y2j-converter-maven-plugin) 
+
 ## Json to Yaml to Json Converter Maven Plugin
 
 The Json to Yaml to Json Converter Maven Plugin allows to convert files from json to yaml and
