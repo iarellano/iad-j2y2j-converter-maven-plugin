@@ -18,11 +18,6 @@ public class Yaml2JsonConverterMojo
     @Parameter(defaultValue = "json", property = "convert.json.outputExtension")
     private String outputExtension;
 
-    public void execute()
-            throws MojoExecutionException {
-        super.execute();
-    }
-
     @Override
     protected ObjectMapper getReader() {
         return new ObjectMapper(new YAMLFactory());
