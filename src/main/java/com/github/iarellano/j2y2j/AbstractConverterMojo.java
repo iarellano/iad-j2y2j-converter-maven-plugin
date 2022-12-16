@@ -125,7 +125,7 @@ public abstract class AbstractConverterMojo extends org.apache.maven.plugin.Abst
                 char[] indent = new char[indentSpaces];
                 Arrays.fill(indent, ' ');
                 DefaultPrettyPrinter.Indenter indenter = new DefaultIndenter(new String(indent), DefaultIndenter.SYS_LF);
-                DefaultPrettyPrinter printer = new DefaultPrettyPrinter();
+                DefaultPrettyPrinter printer = new NoSpaceBeforeColonPrettyPrinter();
                 printer.indentArraysWith(indenter);
                 printer.indentObjectsWith(indenter);
                 writer.setDefaultPrettyPrinter(printer);
